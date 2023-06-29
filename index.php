@@ -1,51 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Under Construction</title>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background-color: #000;
-		}
-		#video-background {
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			overflow: hidden;
-			z-index: -100;
-		}
-		#video-foreground {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			pointer-events: none;
-		}
-		.banner {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-color: #000;
-			color: #fff;
-			padding: 20px;
-			font-size: 36px;
-			font-weight: bold;
-			text-align: center;
-		}
-	</style>
+    <meta charset="utf-8">
+    <title>&#65279;</title>
+    <!-- <link rel="shortcut icon" href="static/favicon_dark.png" type="image/x-icon"/> -->
+    <link rel="icon" href="static/favicon_dark.png" media="(prefers-color-scheme: light)" sizes="96x96">
+    <link rel="icon" href="static/favicon_light.png" media="(prefers-color-scheme: dark)" sizes="96x96">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('https://media.giphy.com/media/YRcXl6VfNhCorklI0R/giphy.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #svg-image {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
 </head>
 <body>
-	<div id="video-background">
-		<iframe id="video-foreground" src="https://www.youtube.com/embed/ubFq-wV3Eic?autoplay=1&loop=1&playlist=ubFq-wV3Eic" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<div class="banner">
-		Under Construction
-	</div>
+    <div id="content">
+        <svg id="svg-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+            <image xlink:href="static/logo.svg" width="300" height="200" />
+        </svg>
+    </div>
 </body>
 </html>
-
